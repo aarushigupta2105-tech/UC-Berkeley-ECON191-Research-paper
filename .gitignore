@@ -1,0 +1,58 @@
+# ==============================================================================
+# .gitignore - Files to exclude from version control
+# ==============================================================================
+
+# Data files (large, restricted, or sensitive)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.dta
+data/processed/*.csv
+data/processed/*.RData
+
+# Output files
+output/tables/*.csv
+output/tables/*.xlsx
+output/figures/*.png
+output/figures/*.pdf
+
+# R-specific
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# System files
+Thumbs.db
+
+# Stata-specific
+*.smcl
+*.log
+*.doh
+
+# Sensitive info
+.env
+credentials.R
+api_keys.R
